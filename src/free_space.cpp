@@ -117,8 +117,9 @@ void lidarFree(const sensor_msgs::LaserScanPtr& msg)
         pub.publish(line_strip);
         r.sleep();
 
-        ros::spinOnce();
+        break;
     }
+    
     
 }
 
